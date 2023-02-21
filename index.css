@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f6fafd;
+    background-color: hsl(224, 35%, 92%);
 }
 
 .finalpage{

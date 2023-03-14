@@ -3,34 +3,70 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Plus Jakarta Sans", sans-serif;
+    overflow-y: visible;
+    overflow-x: inherit;
 }
 body{
     width:100%;
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
     background-color: hsl(224, 35%, 92%);
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+  
+  /* Text */
+  
+  h1 {
+    margin: 0 0 1em 0;
+    font-size: 2.8em;
+    font-weight: 700;
+  }
+  
+  h2 {
+    margin: 0 0 0.5em 0;
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 1.1em;
+  }
+  
+  h3 {
+    margin: 0 0 0.5em 0;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.1em;
+  }
+  
+  h4 {
+    margin: 0 0 0.5em 0;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.1em;
+  }
 .finalpage{
-    
     background-color: #ffffff;
     margin: auto;
-    width: 42%;
-    margin-top: 20px;
-    height: 100%;
+    width: 100%;
+    max-width: 40.5rem;
+    margin-top: 1.25rem;
+    border-radius: 0.9375rem;
+    gap: 1.25em;
+    height:80%;
+    max-height:100%;
 }
 
 .navBar{
-    margin: 10px;
+    margin: 0.825rem;
     /* width: 100%; */
-    min-height: 10vh;
+    max-width: 100%;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
 }
 
 .left_side>p{
@@ -58,11 +94,12 @@ body{
 
 .notificationCard{
     margin: 10px;
-    max-height: 20vh;
     background-color: #ffffff;
     margin-bottom: 1em;
     display: flex;
     border-radius: 0.6rem;
+    max-width:100%;
+    max-height: 100%;
 }
 
 .content{
@@ -115,6 +152,7 @@ body{
     border: grey 1px solid;
     margin-top: 5px;
     padding:10px;
+    max-width: 100%;
 }
 
 .message:hover{
@@ -138,7 +176,7 @@ body{
   }
 
 
-@media (max-width: 27.5rem) {
+@media (max-width: 30.5rem) {
 
     
     body,
@@ -163,7 +201,7 @@ body{
     }
 
     .notificationCard{
-        max-height: 10rem;
+        max-height: 20rem;
         max-width: 100%;
     }
   }
